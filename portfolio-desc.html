@@ -1,0 +1,468 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<title>Jonathan Portfolio</title>
+
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<link rel="icon" type="image/png" href="Jojo_logo.png" />
+		</head>
+
+		<body class="firstport">
+			<header>
+				<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+					<div class="container-fluid">
+					    <a class="navbar-brand" href="index.html"><img src="Jojo_logo.svg" width="30" height="30">
+		 						<span>Jonathan Malique</span></a>
+		 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="btnmenu"><span class="icon-bar">Menu</span>
+						</button>
+					    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+						    <ul class="nav navbar-nav navbar-right mr-auto">
+						      <li class="hvr-underline-from-center nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+						      <li class="hvr-underline-from-center nav-item"><a class="nav-link" href="cv.html">CURRICULUM</a></li>
+						      <li class="active hvr-underline-from-center nav-item"><a class="nav-link" href="portfolio.html">PORTFOLIO</a></li>
+						      <li class="hvr-underline-from-center nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+						    </ul>
+					  </div>
+					</div>
+				</nav>
+			</header>
+ 
+			<div class="container-fluid margintopcont">
+				<div class="container policetxt">
+					<div class="row">
+						<article class="col-lg-12 col-md-12">
+							<h1 id="titre_port"> Portfolio </h1>
+						</article>
+					</div>
+					<div class="row">
+						<article class="col-lg-3 col-md-3">
+							<h1 id="titre_grand"> Partie descriptive </h1>							
+						</article>
+						<article class="col-lg-9 col-md-9 text-right padbut">
+							<a href="portfolio.html"><button class="btn btn-success gene">Généralités</button></a>	
+							<a href="portfolio-desc.html"><button class="btn btn-success active desc">Partie descriptive</button></a>	
+							<a href="portfolio-tech.html"><button class="btn btn-success tech">Partie technique</button></a>	
+							<a href="portfolio-anal.html"><button class="btn btn-success anal">Partie analytique</button></a>	
+						</article>
+					</div>
+					<div class="row">
+						<article class="col-md-12 col-lg-12">
+							<h1> Tableau des expériences </h1>
+							<p>Cette partie présente mes expériences en lien avec le PTP (stages et projets dans le cadre de ma formation ingénieur). Les TP sont quant à eux décrits dans la prochaine partie (technique).</p><p>Vous pouvez cliquer sur les titres pour atteindre la partie correspondante.</p>
+						</article>
+					</div>
+					<table class="table table-bordered">
+					  <thead class="thead-dark">
+					    <tr>
+					 	  <th style="width:20%" scope="col">Titre</th>
+					 	  <th scope="col">Contexte</th>
+					      <th style="width:10%" scope="col">Date</th>
+					      <th style="width:7%" scope="col">Durée</th>
+					      <th scope="col">Fonction(s) principale(s)</th>
+					    </tr>
+					  </thead>
+					    <tr style="background-color: #00FFE6">
+					      <th scope="row"><a href="#hack">Hackathon</a></th>
+					      <td>Développement d'un système interactif de visite du musée océanographique.</td>
+					      <td>Du 08/11/18 au 09/11/18</td>
+					      <td>2 jours</td>
+					      <td>Développeur de l'application Android nécessaire à la visite interactive.</td>
+					    </tr>
+					    <tr style="background-color: white">
+					      <th scope="row"><a href="#tutor4">Projet tutoré de 4A</a></th>
+					      <td>Vers une maison intelligente (recherches et prototype).</td>
+					      <td>De 11/2017 à 06/2018</td>
+					      <td>7 mois</td>
+					      <td>Développeur de l'application Android permettant à un utilisateur de choisir ses préférences.</td>
+					    </tr>
+					    <tr style="background-color: #00FFE6">
+					      <th scope="row"><a href="#stage4">Stage de 4A</a></th>
+					      <td>Construction d'un réseau, détermination de chemins et optimisation.</td>
+					      <td>Du 11/06/18 au 31/08/18</td>
+					      <td>3 mois</td>
+					      <td>Stagiaire chargé de la mise en place d'un réseau de routeurs.</td>
+					    </tr>
+					    <tr style="background-color: white">
+					      <th scope="row"><a href="#ultrao">Projet intégrateur ISS</a></th>
+					      <td>UltraOrdinaire: développer une application de customisation de meubles et se pencher sur une nouvelle lampe, la plus autonome en énergie possible.</td>
+					      <td>Du 04/10/18 au 25/01/19</td>
+					      <td>4 mois</td>
+					      <td>Développeur du traitement d'images par filtres & recherches sur les sources d'énergie envisageables.</td>
+					    </tr>
+					    <tr style="background-color: #00FFE6">
+					      <th scope="row"><a href="#moshpro">MOSH (Microcontrôleurs & Hardware Open-Source)</a></th>
+					      <td>Développer un système de capteur de gaz.</td>
+					      <td>Du 01/10/18 au 30/11/18</td>
+					      <td>2 mois</td>
+					      <td>Réalisation du schéma électronique et du KiCad.</td>
+					    </tr>
+					    <tr style="background-color: white">
+					      <th scope="row"><a href="#gestgei">Gestion des salles du GEI</a></th>
+					      <td>Création d'une architecture de service pour gérer les salles du GEI (services WEB, OM2M pour l'accès aux ressources). Cette architecture permet d'activer lumières, chauffage ou alarme selon certains paramètres.</td>
+					      <td>Du 19/12/18 au 25/01/19</td>
+					      <td>1 mois</td>
+					      <td>Développement de l'IceScrum pour planifier notre projet. Développeur des web services REST et SOAP.</td>
+					    </tr>
+					    <tr style="background-color: #00FFE6">
+					      <th scope="row"><a href="#stagefin">Stage de fin d'études 5A</a></th>
+					      <td>Renault: les IHM embarquées dans les voitures</td>
+					      <td>Du 11/02/19 au 31/07/19</td>
+					      <td>6 mois</td>
+					      <td>Stagiaire chargé de rédiger un état de l'art sur les IHM (intelligentes ou non). Proposer un problème en lien, une solution et développer un prototype.</td>
+					    </tr>
+					  </tbody>
+					</table>
+
+					<div class="row" id="hack">
+						<article class="col-md-12 col-lg-12">
+							<h1 style="background: rgba(0, 204, 204, 0.5); text-indent: 10px;"> Hackathon </h1>
+							<h2> L'environnement et le contexte </h2>
+							<p><b>● Contexte</b> : Un événement important du parcours proposé dans le cadre du PTP ISS correspond au hackathon. L’ensemble des étudiants du parcours se déplace à l’<b>observatoire océanologique</b> de Banyuls-sur-mer pour deux jours de réalisation de projet.
+							<br/>Le choix de chaque sujet est libre et doit seulement être en rapport avec l’observatoire ou l’aquarium qui en fait partie.</p>
+							<p>Nous étions un groupe de 5 personnes et avons choisi de dynamiser la visite de l’aquarium : <img src="imrap/biodiv.png"
+								    height="50px" alt="biodiv"></p>
+							<p>En effet, nous avons eu la chance de pouvoir le visiter dès le premier jour et nous voulions rendre cette visite plus interactive.</p>
+							<p><b>● Notre idée</b> : L’idée de base était donc de créer, tout au long de la visite, une interaction avec le visiteur avec l’installation de bornes. Pour cela il doit :
+							<br/>- télécharger une application sur son mobile ou sa tablette 
+							<br/>- scanner le QR code de la borne devant laquelle il se trouve
+							<br/>- répondre aux questions ou jouer au jeu proposé qui peut parfois être à la fois sur l’application et sur la borne (réponses à donner sur l’application, code à écrire sur le clavier de la borne,…)</p>
+							<p>Voici d’ailleurs un dessin d’explication de cette idée :</p>
+							<p>
+								<figure style="text-align: center;">
+								  <p><img src="imrap/designhack.png"
+								    width="400px"
+								    alt="design">
+								  <figcaption style="font-size: 0.8em"><i>Schéma du projet Pulpito</i></figcaption>
+								</figure>
+							</p>
+							<p><b>● Matériel et fonctions à réaliser</b> :
+							<br/>Concernant les éléments que nous devions réaliser il y avait donc :
+							<br/>- la borne en carton en forme d’animal pour le design
+							<br/>- le choix d’une architecture de données (ici OM2M)
+							<br/>- l’utilisation de plusieurs cartes Arduino et Intel Edison pour brancher les LED et capteurs de la borne
+							<br/>- la gestion de l’abonnement de ces cartes à OM2M
+							<br/>- la création de l’application Android associée (avec accès aux ressources OM2M)</p>
+							<p>Le <b>Use Case</b> que nous avions décidé de réaliser dans le très court temps qui nous était imparti était une série de trois QCM sur l’application qui allumait certaines LED de la borne. Il fallait ensuite taper les numéros correspondant aux LED allumées sur la borne sur un digicode. Si le code était le bon, l’utilisateur remportait la partie !</p>
+							<p><b>
+							Nous avons donné un nom à ce projet : Pulpito !</b>
+							</p>
+							<h2> Ma fonction </h2>
+							<p>Durant ce projet, nous nous étions réparti les 5 tâches et j’avais donc la charge du <b>développement de l’application</b>.</p>
+							<p>En effet, nous n’avions pas beaucoup de temps et j’ai ainsi pu réutiliser mes connaissances acquises lors du projet tutoré de 4ème année en Android Studio <a href="portfolio-desc.html#tutor4">[lien Projet]</a> (<b>code Java et xml</b>). Les contraintes sur cette application étaient les suivantes : un design le plus ludique possible et un accès au ressources OM2M via quelques requêtes REST.</p>
+							<p>Voici deux captures d’écran de cette application que j’ai réalisée :
+							</p>
+							<p style="text-align: center;"><img src="imrap/pulpito1.jpg"
+								    width="200px"
+								    alt="design" style="margin-right: 10px"><img src="imrap/pulpito2.jpg"
+								    width="200px"
+								    alt="design" style="margin-left: 10px">
+							</p>
+
+							<h2> Connaissances et compétences mobilisées </h2>
+							<p>Comme je l'ai précisé auparavant, j'ai pu utiliser mes connaissances en développement d'application Android.</p>
+							<p>L’Hackathon a permis de mettre en avant plusieurs compétences de ce semestre d’études :
+							<br/>- Etre capable de concevoir le logiciel nécessaire à l'utilisation du capteur de gaz et son IHM
+							<br/>- Résoudre un problème de manière créative
+							<br/>- Structurer et diriger un projet innovant
+							<br/>- Travailler en équipe avec des étudiants aux parcours multi-disciplinaires
+							<br/>- Exprimer et échanger des hypothèses
+							<br/>- Suggérer une stratégie pour résoudre le problème identifié
+							<br/>- Suggérer un modèle
+							<br/>- Choisir, concevoir et/ou justifier un protocole ou un prototype expérimental</p>
+
+							<h2> Bilan </h2>
+							<p>Finalement, nous avons présenté notre projet devant l’ensemble des étudiants, des enseignants présents et des acteurs de l’observatoire.</p>
+							<p>Voici la présentation rapide que nous avions élaborée : <a class="btn btn-success franc" style="background-color: rgba(0, 204, 204) !important;" href="imrap/hackpres.pdf" target="_blank">Présentation (pdf)</a></p>
+
+							<p>Je peux dire que cette expérience fut l’une des plus enrichissantes du semestre car elle a permis de mobiliser de <b>nombreuses connaissances dans un laps de temps très court</b>. On apprend à travailler de manière efficace en allant droit au but une fois que l’idée est bien définie, le point important est d’ailleurs de bien s’<b>organiser</b>.</p>
+							<p>Espérons que Pulpito soit l’avenir des musées pour permettre des visites plus ludiques !</p>
+
+
+						</article>
+					</div>
+
+					<div class="row"id="tutor4">
+						<article class="col-md-12 col-lg-12">
+							<h1 style="background: rgba(128, 100, 162, 0.2); text-indent: 10px; direction:rtl; text-align: right;"> Projet tutoré de 4A </h1>
+							<h2> L'environnement et le contexte </h2>
+							<p>En quatrième année, nous avons effectué un projet tutoré. Nous avons tout d’abord choisi un sujet : "<b>Vers une maison intelligente</b>" et étions par groupe de 4 étudiants.</p>
+							<p>La première étape concernait la rédaction d’un état de l’art (jusqu’en janvier 2018) sur l’avancement technologique dans le domaine des smart-homes. Nous avons ensuite choisi de développer une idée innovante, puisque nous avions de meilleures connaissances sur les différentes technologies à utiliser.</p>
+							<p><b>● Choix du sujet</b> : nous avons décidé de créer un système intelligent basé sur la <b>reconnaissance faciale</b> (<b>actions effectuées dans la maison en fonction d’expressions du visage</b>). En effet, grâce à notre idée, un utilisateur peut par exemple allumer une lumière simplement en souriant à la caméra.</p>
+							<p><b>● Matériel à disposition</b> :
+							<br/>- Caméra Kinect
+							<br/>- Carte Intel Edison et ESP32
+							<br/>- Tablette sous Android
+							<br/>- Multiples capteurs et actionneurs</p>
+
+							<p><b>● Architecture</b> : Pour gérer notre architecture nous avons utilisé la plateforme <b>OM2M</b> qui permettait de stocker nos ressources. Voici un schéma de notre architecture finale.</p>
+
+							<p>
+								<figure style="text-align: center;">
+								  <p><img src="imrap/archi.png"
+								    width="600px"
+								    alt="archi">
+								  <figcaption style="font-size: 0.8em"><i>Architecture du projet Smart-Home</i></figcaption>
+								</figure>
+							</p>
+
+							<p style="line-height: 40px;"><b>● Rendu final</b> : Voici différents rendus concernant ce projet :
+							<br/>- le rapport de l’état de l’art sur les maisons intelligentes  <a class="btn btn-success franc" style="background-color: rgba(128, 100, 162) !important;" href="imrap/etatartom2m.pdf" target="_blank">Etat de l'art (pdf)</a>
+							<br/>- le rapport final du projet  <a class="btn btn-success franc" style="background-color: rgba(128, 100, 162) !important;" href="imrap/rapportsmarthome.pdf" target="_blank">Rapport (pdf)</a>
+							<br/>- une vidéo de présentation du projet :
+							<br/><iframe width="560" height="315" src="https://www.youtube.com/embed/yCqT34IbnhM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
+
+							<h2> Ma fonction </h2>
+							<p>Pour ce projet j’ai été chargé du <b>développement de l’application</b>. Cette application permet à l’utilisateur de définir ses préférences concernant les actions à effectuer en fonction de l’expression souhaitée.</p>
+							<p>Elle envoie donc des requêtes REST à OM2M pour récupérer et modifier les valeurs des actionneurs lorsque nécessaire.</p>
+							<p><b>Problème rencontré</b> : Mon principal soucis fut la découverte totale du développement d’une application.</p>
+							<p>Solution : J’ai tout d’abord suivi les tutoriels d’OpenClassrooms sur la création d’une application Android sous Android Studio. J’ai également dû apprendre à coder en <b>Java</b> sans avoir encore suivi les cours de programmation orientée objet, et à utiliser une librairie avec un client http pour communiquer avec les ressources OM2M.</p>
+							<p>Vous pouvez retrouver le code de l’application sur mon Github : <a href="https://github.com/Jonathanmalique/facehome_projettut" target="_blank">[lien Github]</a>.</p>
+
+							<h2> Connaissances et compétences mobilisées </h2>
+							<p><b>Grâce au projet, j’ai pu prendre de l’avance sur plusieurs points :</b>
+							<br/>- programmation orientée objet que je connaissais déjà rapidement avant les cours correspondants
+							<br/>- manipulation de la plateforme OM2M que nous avons réutilisée lors du PTP cette année (connaissances dans les standards et la configuration acquises lors de l’état de l’art)
+							<br/>- apprentissage du développement d’une application Android réutilisé lors du Hackathon</p>
+							<p>
+							<b>Les compétences correspondantes sont :</b>
+							<br/>- Etre capable de concevoir le logiciel nécessaire à l'utilisation du capteur de gaz et son IHM
+							<br/>- Savoir comment situer les principaux standards de l'IoT
+							<br/>- Déployer une architecture conforme à un standard de l'IoT et implémenter un réseau de capteurs
+							<br/>- Déployer et configurer une architecture IoT utilisant OM2M
+							<br/>- Intéragir avec les différentes ressources de l'architecture en utilisant des services REST
+							<br/>- Intégrer une nouvelle technologie dans l'architecture déployée
+							<br/>- Résoudre un problème de manière créative
+							<br/>- Structurer et diriger un projet innovant
+							<br/>- Travailler en équipe avec des étudiants aux parcours multidisciplinaires
+							<br/>- Exprimer et échanger des hypothèses
+							<br/>- Suggérer une stratégie pour résoudre le problème identifié
+							<br/>- Suggérer un modèle
+							<br/>- Choisir, concevoir et/ou justifier un protocole ou un prototype expérimental
+							</p>
+
+							<h2> Bilan </h2>
+							<p>C’est ce projet qui m’a donné envie d’effectuer le <b>parcours ISS</b> pour cette cinquième année. En effet il m’a permis d’avoir une première approche vers le domaine de l’IoT et de <b>développer ma créativité</b> lors du choix du projet.</p>
+
+						</article>
+					</div>
+					<div class="row" id="stage4">
+						<article class="col-md-12 col-lg-12">
+							<h1 style="background: rgba(0, 204, 204, 0.5); text-indent: 10px;"> Stage de 4A </h1>
+							<h2> L'environnement et le contexte </h2>
+							<p>Dans le cadre d’un partenariat entre l’Université Fédérale de Toulouse et l’<b>Afrique du Sud</b>, j’ai eu la chance de pouvoir y effectuer un stage de 3 mois à la fin de ma quatrième année d’études.</p>
+
+							<p>Le projet confié comprenait trois parties permettant de construire un réseau :
+							<br/>- mise en place d’un <b>réseau de routeurs</b> avec l’installation d’un serveur (dernière version d’Ubuntu), puis de plusieurs logiciels, paramétrage des routeurs virtuels sur VMWare, installation d’un <b>contrôleur</b> (Opendaylight) pour pouvoir modifier le réseau et récupérer sa topologie
+							<br/>- visualisation du réseau en utilisant cette topologie : <b>Pathman</b> (code Python et html/javacript)
+							<br/>- recherche des <b>plus courts chemins</b> à l’aide d’algorithmes de graphes, puis l’optimisation des chemins trouvés (selon la taille des liens et les coûts)</p>
+
+							<p>Concernant l’environnement du stage, nous étions deux à travailler en parallèle sur ce projet pour avancer rapidement et avons eu deux présentations de projet (une intermédiaire et une finale) à effectuer.</p>
+							<p>Nous avons aussi rendu une documentation (rapport) : <a class="btn btn-success franc" style="background-color: rgba(0, 204, 204) !important;" href="imrap/rapportstage.pdf" target="_blank">Rapport (pdf)</a>
+							</p>
+							<h2> Ma fonction et bilan </h2>
+							<p>Durant ce stage, j’ai participé à toutes les étapes de ce projet, du début à la fin, et j’ai donc pu améliorer mes connaissances en réseaux et surtout en <b>SDN</b> (réseaux émergeants logiciels), j’avais donc déjà acquis certaines bases pour la compétence "Etre capable d'analyser et d'évaluer les technologies de réseau sans-fil optimales" du Portfolio.</p>
+							<p>Concernant les différents rendus, ils m’ont permis de m’améliorer dans l’apprentissage de l’anglais, ce qui correspond aux compétences :
+							<br/>- Présenter et débattre (en anglais) les choix effectués
+							<br/>- Réaliser un rapport (en anglais) sur le projet développé</p>
+							<p>J’ai pu rencontrer certains problèmes dus au manque de connaissances et j’ai dû faire preuve de beaucoup d’<b>autonomie</b> pour effectuer des recherches par moi-même.</p>
+							<p>Pour finir, j'ai réalisé un poster à mon retour en France pour présenter à l’INSA ce stage enrichissant dans un pays tout aussi surprenant.</p>
+							<p> Voici donc ce poster : <a class="btn btn-success franc" style="background-color: rgba(0, 204, 204) !important;" href="imrap/poster.pdf" target="_blank">Poster (pdf)</a>
+							</p>
+							<p>
+								<figure style="text-align: center;">
+								  <p><img src="imrap/poster.jpg"
+								    width="700px"
+								    alt="poster">
+								  <figcaption style="font-size: 0.8em"><i>Poster réalisé pour mon stage de 4A</i></figcaption>
+								</figure>
+							</p>
+						</article>
+					</div>
+
+					<div class="row" id="ultrao">
+						<article class="col-md-12 col-lg-12">
+							<h1 style="background: rgba(128, 100, 162, 0.2); text-indent: 10px; direction:rtl; text-align: right;"> Projet intégrateur ISS </h1>
+							<h2> L'environnement et le contexte </h2>
+							<p>Le projet central de ma formation dans ce PTP Innovative Smart System a été le projet intégrateur, ou innovant. En effet, nous avons choisi un sujet au début du semestre que nous avions à réaliser sur <b>un peu plus de 3 mois</b>.</p>
+							<p><b>● Notre client</b> : J’ai choisi de travailler avec UltraOrdinaire <img src="imrap/logouo.png"
+								    width="35px"
+								    alt="logouo" style="margin-left: 10px;"></p>
+							<p>UltraOrdinaire est une entreprise toulousaine de design qui vise à améliorer les espaces de vie. Nous avons donc rencontré Mme. Nathalie Bruyère, cofondatrice, qui nous a présenté deux projets distincts :
+							<br/>- le développement d’une <b>application de personnalisation de meubles</b>
+							<br/>- le développement d’un prototype de <b>lampe autonome en énergie</b></p>
+							<p><b>● Description détaillée du cahier des charges</b> :
+							<br/><b>- Application</b> : Pour l’application, elle doit être <b>multiplateforme</b> (IOS, Android et Web) et doit permettre à l’utilisateur de choisir tel ou tel meuble, avec telle ou telle taille (visualisation 3D). On doit trouver un menu de connexion et un menu de gestion du compte et des devis. Il doit aussi y avoir un menu permettant de charger une image et d’y appliquer des <b>filtres</b>. Une fois le filtre appliqué, l’utilisateur peut demander de graver son meuble avec cette image, ou demander une broderie à partir de ce filtre. Pour pouvoir envoyer cette image filtrée à la compagnie de gravure, les fichiers de sortie doivent être des fichiers SVG.
+							<br/><b>- Lampe</b> : le sujet était plus ouvert, il fallait trouver une source d’énergie la plus autonome possible pour allumer une lampe de type bureau. Le rendu devait être à minima un prototype de base et un état de l’art des sources d’énergies.</p> 
+							<p><b>● Equipe de projet</b> : Nous formions une équipe de 5 personnes venant de parcours différents, trois d’Automatique et Electronique (Systèmes embarqués), une de physique et une d’informatique et réseaux.</p>
+							<p>Il y a toujours eu une très bonne cohésion dans le groupe et cela s’est fait ressentir au niveau des résultats.</p>
+							<p><b>● Organisation</b> : Nous rencontrions Mme Nathalie Bruyère <b>chaque semaine</b> pour une réunion plus ou moins rapide au cours de laquelle nous échangions les questions préparées à l’avance. Cela permettait d’avancer rapidement dans le projet (pas de blocage sur plusieurs semaines), tout en informant notre cliente de notre avancement (préférable pour éviter les mauvaises surprises).
+							</p>
+
+							<h2> Méthodes et résultats </h2>
+							<p>Voici les outils que nous avons utilisé pour chaque projet :
+							<br/>- <b>Application</b> : <b>Ionic</b> pour développer une application multiplateforme, <b>Firebase</b> pour construire la base de données, <b>Processing</b> pour générer les filtres d’images et <b>Shape Diver</b> pour la modélisation 3D des meubles.
+							<br/>- <b>Lampe</b> : modules <b>Peltier</b> pour récupérer l’énergie produite par une différence de température (pour essayer de récupérer les pertes de chaleur dans les maisons), LED pour l’éclairage, radiateurs pour dissiper la chaleur.</p>
+							<p>Nous avons réussi à produire une application fonctionnelle, avec un beau design et dont tous les composants marchent. Concernant la lampe, nous avons réalisé un petit prototype mais les essais ne donnent pas beaucoup de rendement pour une faible différence de température.</p>
+							<p>Voici notre rapport effectué dans le cadre de ce projet : <a class="btn btn-success franc" style="background-color: rgba(128, 100, 162) !important;" href="imrap/ultrao.pdf" target="_blank">Rapport (pdf)</a>
+							</p>
+							<p>Voici la présentation finale de ce projet : <br/><iframe src="imrap/ultraopres.pdf" width="800" height="600" align="middle"></iframe>
+							</p>
+
+							<h2> Ma fonction</h2>
+							<p>● Ce projet a, pour ma part, été divisé en deux grands intervalles de temps. La moitié de celui-ci a été consacré à l’imagination d’un prototype pour la lampe. En effet, j’ai aidé Sophie Rougeaux a rédiger un état de l’art des sources d’énergies les plus autonomes et renouvelables puis j’ai participé à essayer d’être créatif concernant une nouvelle source.</p>
+							<p> Vous pouvez trouver l'état de l'art ici :   <a class="btn btn-success franc" style="background-color: rgba(128, 100, 162) !important;" href="imrap/etatartlampe.pdf" target="_blank">Etat de l'art (pdf)</a></p>
+							<p>
+							Nous sommes parvenus à choisir deux prototypes de départ : une sphère transparente en verre remplie d’eau qui convergeait les rayons de lumière vers un panneau solaire, et l’idée de récupérer les pertes thermiques au sein d’une habitation.</p>
+							<p>Après plusieurs tests, nous avons abandonné l’idée de la sphère en verre pour des questions de faisabilité et de rendement. J’ai finalement aidé Sophie à développer un prototype sur la solution thermique.</p>
+							<p><b>Problème 1</b> : Dans ce projet le principal problème fut de tenter de calculer comment nous pouvions effectuer le <b>stockage d’énergie</b> sur une période donnée pour utiliser cette énergie à un moment voulu. Pour cela nous avons effectué de nombreuses recherches en autonomie sur les supercondensateurs et sommes allés nous renseigner auprès des enseignants du Génie Electrique. Finalement, nous n’avons pas mis en place ce stockage d’énergie mais avons réussi à effectuer les calculs dans le cas où ce système serait intégré.</p>
+							<p>● Le deuxième intervalle de temps fut pour moi le plus intéressant car je travaillais sur le <b>développement des filtres d’images</b> avec Agathe Limouzy. Pour cela, j’utilisais Processing en Javascript et des filtres trouvés en effectuant des recherches. Il a d’ailleurs fallu modifier chaque filtre pour correspondre aux attentes de notre cliente.</p>
+							<p>Voici, par exemple, un filtre appliqué sur une photo :</p>
+							<p style="text-align: center;">
+								  <img src="imrap/image_test.jpg"
+								    width="400px"
+								    alt="img1" style="margin-right: 10px;"><img src="imrap/image2.jpg"
+								    width="400px"
+								    alt="img2"style="margin-left: 10px;">
+							</p>
+
+							<p><b>Problème 2</b> : la partie la plus difficile des filtres fut de comprendre les filtres déjà implémentés et de les modifier pour obtenir un fichier <b>SVG</b> et des tailles de filtres aux <b>formats</b> souhaités (A5, A4, A3, A2). Pour cela, de nombreuses recherches ont été nécessaires et le travail s’est fait en totale autonomie.
+							</p>
+
+							<h2> Connaissances et compétences </h2>
+							<p>J’ai pu réutiliser mes compétences en <b>électronique</b> dans le projet sur la lampe et améliorer mes compétences en <b>Javascript</b> (que j’avais déjà manipulé lors de l’apprentissage du développement d’un site web) du côté de la programmation. J’ai également pu parfaire mon anglais lors des différents travaux et présentations à rendre.</p>
+							<p>Voici la liste des compétences très nombreuses (car c'est le projet central de la formation) utilisées lors de ce projet :
+							<br/>- Maîtriser l'architecture d'un système de gestion d'énergie, à simple stockage, à récupération d'énergie, savoir comment dimensionner les éléments de stockage selon le cahier des charges
+							<br/>- Définir les différentes phases du développement logiciel
+							<br/>- Appliquer l'une de ces méthodes (de management) à un projet
+							<br/>- Analyser un problème réel
+							<br/>- Suggérer une solution technologique au problème
+							<br/>- Implémenter un prototype pour résoudre le problème
+							<br/>- Présenter et débattre (en anglais) les choix effectués
+							<br/>- Réaliser un rapport (en anglais) sur le projet développé
+							<br/>- Résoudre un problème de manière créative
+							<br/>- Structurer et diriger un projet innovant
+							<br/>- Travailler en équipe avec des étudiants aux parcours multidisciplinaires
+							<br/>- Exprimer et échanger des hypothèses
+							<br/>- Suggérer une stratégie pour résoudre le problème identifié
+							<br/>- Suggérer un modèle
+							<br/>- Choisir, concevoir et/ou justifier un protocole ou un prototype expérimental
+							</p>
+
+							<h2> Bilan </h2>
+							<p>Ce projet a pour moi été la surprise de ce semestre d’études, en alliant <b>design et technique</b>. Je ne m’attendais pas à être autant intéressé par un sujet donné.</p>
+							<p>Le fait de travailler avec une cliente réelle change aussi la perception que l’on a des projets car la pression est un peu plus forte et permet de maintenir un travail <b>constant et efficace</b>.
+							Je suis vraiment heureux du travail que j’ai réussi à fournir, surtout concernant la programmation des filtres d’image.
+							</p>
+						</article>
+					</div>
+
+
+
+					<div class="row" id="moshpro">
+						<article class="col-md-12 col-lg-12">
+							<h1 style="background: rgba(0, 204, 204, 0.5); text-indent: 10px;"> MOSH </h1>
+							<h2> L'environnement et le contexte </h2>
+							<p>Dans l’enseignement Microcontrôleurs & Hardware Open-Source j’ai choisi d’effectuer le <b>mini-projet LoRa en autonomie</b> car j’avais déjà quelques connaissances en Arduino. Ce mini-projet consistait à connecter un capteur de gaz au réseau LoRa pour transmettre ses données à un compte TTN (The Things Network). Il fallait ensuite afficher les données reçues grâce à une interface graphique (Node-RED).</p>
+							<p>Les <b>trois grandes étapes</b> de ce mini-projet ont donc été :
+							<br/>- création d’un shield pour Arduino Uno sous KiCad
+							<br/>- développement du software sur Arduino Uno (connexion de la carte LoRa au réseau TTN, mise en place des modes uplink et downlink)
+							<br/>- développement d’une interface graphique </p>
+							<p>Nous étions un groupe de 3 étudiants, dont 2 provenaient d’un parcours <b>électronique et automatique</b> et 1 qui provenait d’un parcours <b>physique</b>, ce qui nous a permis d’avoir des connaissances plus approfondies dans le fonctionnement physique des capteurs.
+							</p>
+							<h2> Ma fonction</h2>
+							<p>Personnellement, j’ai participé à toutes les étapes du développement de ce projet. Cependant, j’ai été chargé plus précisément de la <b>réalisation du PCB</b>. Ce PCB devait intégrer le capteur de gaz, le montage d’amplification (en sortie du capteur, afin d’adapter l’impédance), la puce LoRa et 2 LED d’indication (que nous avions décidé). Il fallait que ce PCB puisse se "brancher" sur l’Arduino comme un shield.</p>
+							<p><b>Problème 1</b> : La partie difficile a été de prendre en main les différentes fonctionnalités de <b>KiCad</b>. J’ai utilisé les cours que nous avons suivi sur le développement d’un projet KiCad et j’ai effectué quelques recherches personnelles supplémentaires. J’ai tout d’abord appris à concevoir des empreintes à partir de composants physiques, puis j’ai réalisé le schéma électrique avant de réaliser le routage du PCB. J’a également utilisé un plan de masse sur les faces de ma carte.</p>
+							<p>Voici le schéma électronique réalisé sous KiCad :</p>
+							<p>
+								<figure style="text-align: center;">
+								  <p><img src="imrap/schemaelec.png"
+								    height="400px"
+								    alt="elec">
+								  <figcaption style="font-size: 0.8em"><i>Schéma électronique KiCad</i></figcaption>
+								</figure>
+							</p>
+
+							<p><b>Problème 2</b> : Le second problème auquel j’ai été confronté fut la découverte du réseau LoRa et des applications comme Node-Red, que nous n’avions jamais utilisées. Nous avons fait preuve de beaucoup d’autonomie et avons cherché à résoudre nos problèmes par nous-mêmes durant tout le projet.
+							</p>
+							<h2> Compétences et connaissances mobilisées</h2>
+							<p>J’avais quelques connaissances basiques en programmation Arduino et des connaissances plus poussées en électronique mais la partie LoRa, Node-RED et le logiciel KiCad m’étaient encore inconnus avant de commencer ce mini-projet. </p>
+							<p>Les compétences correspondantes sont :
+							<br/>- Comprendre l'architecture des microcontrôleurs et comment les utiliser
+							<br/>- Etre capable de concevoir la chaîne d'acquisition (capteur, conditionneur, microcontrôleur) en fonction de l'application
+							<br/>- Etre capable de concevoir le circuit électronique du conditionnement du signal du capteur (conception et simulation)
+							<br/>- Etre capable de concevoir un shield pour interfacer le capteur de gaz
+							<br/>- Etre capable de combiner tous les composants mentionnés ci-dessus dans un dispositif intelligent
+							<br/>- Etre capable de concevoir le logiciel nécessaire à l'utilisation du capteur de gaz et son IHM
+							</p>
+							<h2> Bilan</h2>
+							<p>Pour conclure, voici le lien du Github où se trouve l’ensemble de mon projet (KiCad, Arduino) : <a href="https://github.com/Jonathanmalique/mosh_project" target="_blank">[lien Github]</a>.</p>
+							<p>Ce projet m’a été très bénéfique car il s’agissait du premier projet de ce semestre et il était déjà très enrichissant en termes de connaissances, <b>alliant à la fois électronique et programmation dans le domaine de l’IoT</b>. De plus, nous avons eu des plages horaires assez importantes et bien étalées ce qui permettait d’avancer à un bon rythme.</p>
+						</article>
+					</div>
+
+					<div class="row" id="gestgei">
+						<article class="col-md-12 col-lg-12">
+							<h1 style="background: rgba(128, 100, 162, 0.2); text-indent: 10px; direction:rtl; text-align: right;"> Gestion des salles du GEI </h1>
+							<h2> L'environnement et le contexte </h2>
+							<p>Ce projet avait pour but de nous faire manipuler une architecture de service pour automatiser les salles du GEI. Nous devions tout d’abord choisir une liste de <b>scenarios</b> à implémenter, nous en avons choisi trois :
+							<br/>- allumer l’alarme si une présence est détectée en dehors des horaires d’ouverture, ainsi qu’éteindre les lumières et fermer les portes
+							<br/>- allumer la lumière si la luminosité de la pièce est plus faible que celle souhaitée, que l'on détecte une présence dans la pièce et que l’on est dans la plage des horaires d’ouverture
+							<br/>- allumer le radiateur si la température est en dessous de celle souhaitée et que l’on est dans la plage des horaires d’ouverture</p>
+							<p>Il a ensuite fallu définir les <b>services web</b> et l’architecture de notre projet pour pouvoir implémenter ces scénarios (REST pour accéder aux ressources, SOAP pour implémenter l’intelligence vis-à-vis des scénarios). Nous avons utilisé <b>OM2M</b> pour gérer les données nécessaires en créant un plugin permettant de créer toutes les ressources pour une salle du GEI.</p>
+							<p>Pour les capteurs et actionneurs, nous avons simulé leur existence avec un envoi automatique de données vers OM2M. Enfin, nous avons créé une <b>interface web</b> qui interagit avec OM2M via les web services de type REST qui permet à un utilisateur de manipuler et observer les ressources d’une salle.</p>
+							<p>Pour s’organiser, nous avons utilisé la méthode <b>Agile</b> avec le logiciel de gestion <b>IceScrum</b> (définition de features, stories).
+							</p>
+
+							<h2> Ma fonction</h2>
+							<p>Dans ce projet, j’ai été chargé de définir les scénarios d’utilisation et d’aider à la création des services web de type REST et SOAP. J’ai aussi été chargé de créer l’organisation IceScrum.</p>
+							<p><b>Problème</b> : Nous avons eu de nombreux problèmes de compatibilité entre les versions des différents imports ce qui a causé une grosse perte de temps. Heureusement, nous avons réussi à trouver des solutions pour optimiser le temps qu’il nous restait.
+							</p>
+
+							<h2> Compétences mobilisées</h2>
+							<p>Je n’avais pas beaucoup de connaissances dans le domaine des architectures de service mais savais utiliser OM2M et les requêtes REST, grâce au projet tutoré de quatrième année et au cours d’intergiciel suivi ce semestre.</p>
+							<p>Voici la liste des compétences acquises :
+							<br/>- Savoir définir une Architecture Orientée Services (SOA)
+							<br/>- Déployer une SOA avec des services web
+							<br/>- Déployer et configurer une SOA utilisant SOAP
+							<br/>- Déployer et configurer une SOA utilisant REST
+							<br/>- Intégrer un gestionnaire de processus dans une SOA
+							<br/>- Définir les différentes phases du développement logiciel
+							<br/>- Connaître les différentes méthodes de management de projet
+							<br/>- Appliquer l'une de ces méthodes à un projet
+							<br/>- Exprimer et échanger des hypothèses
+							<br/>- Suggérer une stratégie pour résoudre le problème identifié
+							<br/>- Suggérer un modèle
+							<br/>- Choisir, concevoir et/ou justifier un protocole ou un prototype expérimental
+							</p>
+
+							<h2> Bilan</h2>
+							<p>Pour conclure ce projet, je trouve dommage qu’il soit arrivé si tard dans le semestre et que nous ayons dû le boucler dans les deux dernières semaines, alors qu’il nous aurait fallut beaucoup plus de temps.</p>
+							<p>Cependant, nous avons réussi à déployer une gestion des salles assez agréable, avec une belle interface web et qui respecte le cahier des charges. De plus, le projet permet de bien mettre en avant les outils découverts durant les TD du module.</p>
+							<p>Le rapport est disponible :  <a class="btn btn-success franc" style="background-color: rgba(128, 100, 162) !important;" href="imrap/archiserv.pdf" target="_blank">Rapport (pdf)</a>
+							</p>
+						</article>
+					</div>
+					<div class="row" id="stagefin">
+						<article class="col-md-12 col-lg-12">
+							<h1 style="background: rgba(0, 204, 204, 0.5); text-indent: 10px;"> Stage de fin d'études 5A </h1>
+							<h2> Bilan </h2>
+							<p>Après de nombreuses recherches et d'entretiens passés chez différentes compagnies, j'ai finalement décidé d'effectuer mon stage de fin d'études chez <b>Renault Software Labs</b></p>
+							<p>Comme son nom l'indique, cette filiale de Renault travaille sur le logiciel embarqué des voitures.</p>
+							<p>Voici la liste des missions qui me seront confiées pendant ce stage :
+							<br/>- Rédiger un état de l'art concernant toutes les technologies liées aux IHM des voitures
+							<br/>- Choisir des cas d'utilisation concrets à implémenter dans l'IHM
+							<br/>- Réaliser un premier prototype de cette idée innovante (environnement Android)</p>
+						</article>
+					</div>
+				</div>
+			</div>
+
+			<script src="js/jquery.js"></script>
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		</body>
+
+	</html>
